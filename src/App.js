@@ -2,17 +2,21 @@ import logo from './logo.svg';
 import './App.css';
 import {useState} from 'react';
 import axios from "axios";
+import env from "dotenv";
+env.config();
 
 
-const API_URL = "https://lucyserver2.onrender.com";
+// const SERVER_URL = "https://lucyserver2.onrender.com";
+const SERVER_URL = process.env.SERVER;
 
 
 function App() {
   const [msg, setMsg] = useState("");
   const updMsg = (e) => setMsg(e.target.value);
+  console.log(SERVER_URL);
   const getJoke = async function(){
     try {
-      const response = await axios.get(`${API_URL}/user`,msg);
+      const response = await axios.get(`${SERVER_URL}/user`,msg);
       console.log(response.data);
       setMsg(response.data)
       // console.log(data);
