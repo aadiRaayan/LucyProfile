@@ -12,9 +12,9 @@ function App() {
   const updMsg = (e) => setMsg(e.target.value);
   const getJoke = async function(){
     try {
-      const response = await axios.get(`${API_URL}/random`,msg);
+      const response = await axios.get(`${API_URL}/user`,msg);
       console.log(response.data);
-      setMsg(response.data.jokeText)
+      setMsg(response.data)
       // console.log(data);
     } catch (error) {
       console.log(error);
