@@ -2,12 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import {useState} from 'react';
 import axios from "axios";
-import env from "dotenv";
-env.config();
 
+// import env from "dotenv";
+// env.config();
+//const SERVER_URL = process.env.SERVER;
+const SERVER_URL = "https://lucyserver2.onrender.com";
 
-// const SERVER_URL = "https://lucyserver2.onrender.com";
-const SERVER_URL = process.env.SERVER;
 
 
 function App() {
