@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    position: relative;
+    height: 50px;
+    /* align-items: center; */
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    height: 80%;
+    width: 30%;
+    left: 20px;
+    font-size: 20px;
+    top:8px;
+}
+
+.nav-links {
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    font-size: 20px;
+    height: 80%;
+    width: 70%;
+    right: 30px;
+    top:8px;
+}
+.nav {
+    margin: 0 20px;
+}
+
+.login {
+background-color: #264653;
+padding: 0 20px;
+color: white;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+}
